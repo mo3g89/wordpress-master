@@ -17,9 +17,11 @@ nodes:
     scalingMode: STATEFUL
     displayName: Load balancer
 
-  - nodeType: ${globals.CP_NODE_TYPE}
+  #- nodeType: ${globals.CP_NODE_TYPE}
+  - image: devbeta/litespeed
+    tag: 5.4RC4-php-7.3.5
     count: 1
-    cloudlets: 8
+    cloudlets: 16
     nodeGroup: cp
     scalingMode: STATELESS
     displayName: AppServer
