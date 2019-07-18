@@ -18,8 +18,7 @@ nodes:
     displayName: Load balancer
 
   #- nodeType: ${globals.CP_NODE_TYPE}
-  - image: devbeta/litespeed
-    tag: 5.4RC4-php-7.3.5
+  - image: devbeta/litespeed:5.4RC4-php-7.3.5
     count: 1
     cloudlets: 16
     nodeGroup: cp
